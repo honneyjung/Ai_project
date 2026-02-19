@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Regex</title>
+  </head>
+
+  <body>
+    <div>
+      <p>휴대폰 번호 등록</p>
+    </div>
+    <form action="">
+      <label for="mobileInput">Mobile: </label>
+      <input
+        type="text"
+        id="mobileInput"
+        autocomplete="off"
+        placeholder="010-1234-567Q8"
+        pattern="^010-[0-9]{4}-[0-9]{4}$"
+        title="010-1234-5678 형식을 입력하세요."
+      />
+      <button type="button">전송</button>
+    </form>
+  </body>
+</html>

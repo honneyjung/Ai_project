@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mouseover Event</title>
+  </head>
+  <body>
+    <div class="box">마우스를 올려보세요.</div>
+
+    <script>
+      const box = document.querySelector(".box");
+
+      function mouseOver() {
+        box.style.color = "orange";
+      }
+      function mouseOut() {
+        box.style.color = "black";
+      }
+
+      box.addEventListener("mouseover", mouseOver);
+      box.addEventListener("mouseout", mouseOut);
+    </script>
+  </body>
+</html>

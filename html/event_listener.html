@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Event Listener</title>
+  </head>
+  <body>
+    <input type="text" class="name" placeholder="이름을 입력해 주세요." />
+    <div class="preview"></div>
+    <script>
+      const inputTag = document.querySelector(".name");
+      const divTag = document.querySelector(".preview");
+
+      function inputPreview() {
+        divTag.textContent = inputTag.value;
+      }
+
+      inputTag.addEventListener("input", inputPreview);
+    </script>
+  </body>
+</html>
