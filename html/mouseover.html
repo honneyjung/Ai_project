@@ -11,15 +11,9 @@
     <script>
       const box = document.querySelector(".box");
 
-      function mouseOver() {
-        box.style.color = "orange";
-      }
-      function mouseOut() {
-        box.style.color = "black";
-      }
+      box.addEventListener("mouseover", () => (box.style.color = "skyblue"));
 
-      box.addEventListener("mouseover", mouseOver);
-      box.addEventListener("mouseout", mouseOut);
+      box.addEventListener("mouseout", () => (box.style.color = "black"));
     </script>
   </body>
 </html>
